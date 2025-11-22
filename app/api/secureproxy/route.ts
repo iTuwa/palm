@@ -160,7 +160,10 @@ async function handleProxy(req: NextRequest, endpoint: string) {
       resHeaders['Content-Type'] = contentType;
     }
 
-    return new NextResponse(responseData, {
+    // Convert Node Buffer to a web-compatible Uint8Array for Response body
+    const bodyUint8 = new Uint8Array(responseData);
+
+    return new NextResponse(bodyUint8, {
       status: statusCode,
       headers: resHeaders,
     });
