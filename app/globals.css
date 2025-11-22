@@ -1,0 +1,9 @@
+@import '../drops.css';
+@import '../fonts.css';
+@import '../index.css';
+@import '../css2.css';
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
