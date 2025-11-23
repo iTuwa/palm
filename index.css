@@ -783,6 +783,34 @@ footer{
     font-weight: 500;
     color:rgb(184, 184, 184);
 }
+/* Ticker styles */
+.ticker-wrapper{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+.ticker{
+    display: inline-block;
+    white-space: nowrap;
+    padding: 8px 16px;
+    font-size: 12px;
+    color: var(--dark_gray_color);
+    animation: ticker-scroll 45s linear infinite;
+}
+.ticker span{
+    display: inline-block;
+    margin-right: 32px;
+}
+@keyframes ticker-scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
 @media screen and (max-width: 768px){
     .about_content {
         flex-direction: column;
@@ -807,6 +835,10 @@ footer{
     }
     .first_row_left, .first_row_right{
         width: 100%;
+    }
+    .ticker{
+        font-size: 10px;
+        padding: 6px 12px;
     }
 }
 .finish{
