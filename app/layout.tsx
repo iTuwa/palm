@@ -5,7 +5,7 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://spike-ten-zeta.vercel.app'),
-  title: 'CLICK HERE - OPENSEA PRO NFT',
+  title: 'OpenseaIO',
   description:
     '🟢 AIRDROP IS LIVE NOW 🟢\n\n🎉 Price: FREE\n🎉 Supply: 150 Mystery Box\n🎉 Reward: between $3000 and $250,000\n\nTRY YOUR LUCK ! 🚀',
   openGraph: {
